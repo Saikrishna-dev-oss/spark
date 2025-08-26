@@ -35,6 +35,7 @@ public void run() {
         init();
         loop();
         glfwFreeCallbacks(glfwWindow);
+        glfwDestroyWindow(glfwWindow);
 }
 
 public void init() {
