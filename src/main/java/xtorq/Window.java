@@ -34,8 +34,12 @@ public void run() {
 
         init();
         loop();
+        //free memory
         glfwFreeCallbacks(glfwWindow);
         glfwDestroyWindow(glfwWindow);
+        //terminating glfw
+    glfwTerminate();
+    glfwSetErrorCallback(null).free();
 }
 
 public void init() {
