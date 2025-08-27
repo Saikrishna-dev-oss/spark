@@ -1,0 +1,17 @@
+# Dual License Notice
+
+This project is dual-licensed under the following terms:
+
+1. **MIT License** (see `LICENSE.MIT`)  
+   - Applies to academic, educational, and non-commercial use.  
+   - This allows colleges/universities and examiners to review, run, and use the code for learning and evaluation.
+
+2. **Proprietary License (EULA)** (see `LICENSE.EULA`)  
+   - Applies to commercial distribution, including but not limited to Steam or other platforms.  
+   - This grants players the right to use the game but not to modify, redistribute, or resell it.  
+
+By default:
+- **Students/teachers/examiners** → use under MIT License.  
+- **End-users/customers (e.g., Steam players)** → use under Proprietary EULA.  
+
+For questions about licensing, please contact: [Your Email]
