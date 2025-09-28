@@ -1,28 +1,28 @@
+
 package xtorq;
 
 import static org.lwjgl.glfw.GLFW.GLFW_PRESS;
 import static org.lwjgl.glfw.GLFW.GLFW_RELEASE;
 
 public class MouseListener {
-    private static MouseListener instance;
     private double scrollX, scrollY;
     private double xPos,yPos;
     private double lastX, lastY;
-    private boolean mousebuttonclicked[] = new boolean[3];
+    private boolean []mousebuttonclicked = new boolean[3];
     private boolean isDragging;
+
+    private static MouseListener instance= new MouseListener();
     public static MouseListener get() {
-        if (instance == null) {
-            instance = new MouseListener();
-        }
         return instance;
     }
+
     public MouseListener() {
-        get().scrollX = 0;
-        get().scrollY = 0;
-        get().xPos = 0;
-        get().yPos = 0;
+        this.scrollX = 0;
+        this.scrollY = 0;
+        this.xPos = 0;
+        this.yPos = 0;
 //        get get().mousebclicked[0]||get().mousebclicked[1];
-    get().isDragging = false;
+        this.isDragging = false;
     }
     public static void mousePosCallback(long window, double xPos, double yPos) {
         get().lastX = get().xPos;
@@ -68,12 +68,17 @@ public class MouseListener {
     public static float getScrollY() {
         return (float)get().scrollY;
     }
+
+    public static void setInstance(MouseListener instance) {
+        MouseListener.instance = instance;
+    }
+
     public boolean isDragging(){
-        return get().isDragging;
+        return this.isDragging;
     }
     public boolean mouseButtonDown(int button) {
         if(button< get().mousebuttonclicked.length) {
-            return get().mousebuttonclicked[button];
+            return this.mousebuttonclicked[button];
         }
         else  {
             return false;
