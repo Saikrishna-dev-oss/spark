@@ -6,30 +6,41 @@ Built using **Gradle** and compatible with **JDK 21+ (tested on JDK 24)**.
 ---
 
 ## 🚀 Features
+
 - Uses **LWJGL 3.3.6** with GLFW, OpenGL, OpenAL, STB, and Assimp.
 - Configured with **Gradle** for easy builds.
 - Includes platform-specific **native libraries** (Windows, Linux, macOS).
 - Demonstrates a basic **window creation** in Java.
+- **New:** Scene change and blackfade effects added.
+- **Improved:** MouseListener.java fixes for stack overflow and reliable event handling.
 
 ---
 
 ## 📂 Project Structure
+
 ```
 spark/
-├─ src/
-│  └─ main/
-│     └─ java/
-│        └─ xtorq/
-│           ├─ Main.java
-│           └─ Window.java
+├─ .gitignore
+├─ .idea/
+├─ CONTRIBUTING.md
+├─ LICENSE
+├─ LICENSE.EULA
+├─ LICENSE.PROPRIETARY
+├─ README.md
 ├─ build.gradle
+├─ gradle/
+├─ gradlew
+├─ gradlew.bat
 ├─ settings.gradle
-└─ README.md
+└─ src/
+    └─ main/
+        └─ java/
 ```
 
 ---
 
 ## 🔧 Prerequisites
+
 - **Java JDK 21 or newer** (tested on JDK 24)  
 - **Gradle** (bundled with IntelliJ IDEA)  
 - **IntelliJ IDEA** or any IDE with Gradle support  
@@ -39,6 +50,7 @@ spark/
 ## ⚡ How to Run
 
 ### IntelliJ IDEA
+
 1. Open the project in IntelliJ IDEA.  
 2. Wait for Gradle to sync (`build.gradle` will download LWJGL dependencies).  
 3. Go to **Run → Edit Configurations...**:
@@ -60,6 +72,7 @@ spark/
 ---
 
 ### Gradle CLI
+
 You can also run from terminal:
 
 ```bash
@@ -109,5 +122,27 @@ In `build.gradle`, the following natives are configured:
 
 ---
 
+## 🤝 Contributing & Conduct
+
+- See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute, coding standards, and guidelines.
+- All contributors must adhere to the project's code of conduct.
+
+---
+
 ## 📜 License
+
 This project is for learning purposes and currently has no explicit license.
+Additional license details and terms can be found in:
+- [LICENSE](LICENSE)
+- [LICENSE.EULA](LICENSE.EULA)
+- [LICENSE.PROPRIETARY](LICENSE.PROPRIETARY)
+
+---
+
+## 📝 Recent Updates
+
+- Scene change and blackfade graphical effects.
+- MouseListener.java improvements (stack overflow fix; safer event handling).
+- Merge and conflict resolutions.
+- Added contributing guidelines & code of conduct.
+- Updated and clarified licensing documents.
