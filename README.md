@@ -131,7 +131,7 @@ In `build.gradle`, the following natives are configured:
 
 ## 📜 License
 
-This project is for learning purposes and currently has no explicit license.
+This project is for learning purposes.
 Additional license details and terms can be found in:
 - [LICENSE](LICENSE)
 - [LICENSE.EULA](LICENSE.EULA)
