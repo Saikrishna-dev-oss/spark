@@ -31,12 +31,12 @@ private Window() {
         switch (newScene) {
             case 0:
                 currentScene = new LevelEditorScene();
-                // Make sure you call init()
+                currentScene.init();
                 break;
             case 1:
                 // This is the part that creates the LevelScene
                 currentScene = new LevelScene();
-                 // Make sure you call init()
+                currentScene.init();
                 break;
             default:
                 assert false : "Unknown scene '" + newScene + "'";
